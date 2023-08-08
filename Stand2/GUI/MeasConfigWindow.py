@@ -38,19 +38,37 @@ class ConfigWindow:
                 break
             elif event == 'OK':
                 try:
-                    obj.measurement_delay = int(values['-measurement_delay-'])
-                    obj.meas_step_delay = int(values['-meas_step_delay-'])
-                    if obj.meas_step > 0:
+                    if int(values['-measurement_delay-']) > 0:
+                        obj.measurement_delay = int(values['-measurement_delay-'])
+                    else:
+                        raise StandException('Delay between Fan set and measurements start could not be 0 or less')
+
+                    if int(values['-meas_step_delay-']) > 0:
+                        obj.meas_step_delay = int(values['-meas_step_delay-'])
+                    else:
+                        raise StandException('Delay between measurements could not be 0 or less')
+
+                    if int(values['-meas_step-']) > 0:
                         obj.meas_step = int(values['-meas_step-'])
                     else:
                         raise StandException('Measurement quantity could not be 0 or less')
-                    obj.actuator_open_time = int(values['-act_open_time-'])
-                    obj.actuator_change_position_time = int(values['-act_cp_time-'])
+
+                    if int(values['-act_open_time-']) > 0:
+                        obj.actuator_open_time = int(values['-act_open_time-'])
+                    else:
+                        raise StandException('Actuator open time could not be 0 or less')
+
+                    if int(values['-act_cp_time-']) > 0:
+                        obj.actuator_change_position_time = int(values['-act_cp_time-'])
+                    else:
+                        raise StandException('Actuator change position time could not be 0 or less')
+
+                    window.close()
+
                 except ValueError:
                     sg.popup_error('Should be a number.')
                 except StandException as sx:
                     sg.popup_error(sx.get_exception_name())
-                window.close()
 
         window.close()
 
