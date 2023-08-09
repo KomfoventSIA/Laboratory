@@ -2,9 +2,11 @@ import time
 import PySimpleGUI as sg
 import os
 from Measurements.Measurements import Measurements
-from ModbusWindow import ModbusWindow
-from MeasConfigWindow import ConfigWindow
+from GUI.ModbusWindow import ModbusWindow
+from GUI.MeasConfigWindow import ConfigWindow
 from Measurements.Stand_Exception import StandException
+from GUI.ManualModeWindow import ManualModeWindow
+
 
 
 
@@ -169,6 +171,9 @@ class MainWindow:
             elif event == 'Config':
                 cf_window = ConfigWindow()
                 cf_window.create_config_window(measurements)
+            elif event == 'Manual Mode':
+                mm_window = ManualModeWindow()
+                mm_window.create_manual_window()
             elif event == '-belimo-':
                 measurements.set_actuator('Belimo')
                 measurements.update_table_headers()
@@ -195,9 +200,9 @@ class MainWindow:
                 measurements.set_nozzle('76.2', window['-76-'].get())
             elif event == '-101-':
                 measurements.set_nozzle('101.6', window['-101-'].get())
-            elif event == '-38-':
+            elif event == '-127-':
                 measurements.set_nozzle('127', window['-127-'].get())
-            elif event == '-50-':
+            elif event == '-152-':
                 measurements.set_nozzle('152.4', window['-152-'].get())
 
             elif event == '-add_dev-':

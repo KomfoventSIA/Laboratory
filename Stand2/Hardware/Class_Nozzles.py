@@ -27,7 +27,7 @@ class Nozzles(Serial):
         pressure = Serial.mod_response_to_int(response) / self.nozzle_pressure_coef  # Recalculate received int to pressure
         return round(pressure, 1)
 
-    def nozzle_air_flow(self, nozzles_pressure: int):
+    def nozzle_air_flow(self, nozzles_pressure: float):
         """
         Specific for stand 1
         Calculates air flow from nozzles for Stand 1 from measured pressure in procedure: def nozzle_pressure(serial)
