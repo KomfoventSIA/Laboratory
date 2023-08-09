@@ -2,9 +2,10 @@ import time
 import PySimpleGUI as sg
 import os
 from Measurements.Measurements import Measurements
-from GUI.ModbusWindow import ModbusWindow
-from GUI.MeasConfigWindow import ConfigWindow
+from ModbusWindow import ModbusWindow
+from MeasConfigWindow import ConfigWindow
 from Measurements.Stand_Exception import StandException
+
 
 
 class MainWindow:
