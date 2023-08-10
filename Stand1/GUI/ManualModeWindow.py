@@ -3,6 +3,7 @@ from GUI.ModbusWindow import ModbusWindow
 from Measurements.Stand_Exception import StandException
 import PySimpleGUI as sg
 import time
+
 class ManualModeWindow(Measurements):
     def __init__(self):
         super().__init__()
@@ -70,59 +71,71 @@ class ManualModeWindow(Measurements):
             event, values = window.read()
             if event in (sg.WIN_CLOSED, 'Exit'):
                 break
+            try:
+                if event == 'Modbus':
+                        mb_window = ModbusWindow()
+                        mb_window.create_modbus_window()
 
-            elif event == 'Modbus':
-                try:
-                    mb_window = ModbusWindow()
-                    mb_window.create_modbus_window()
-                except StandException as sx:
-                    sg.popup_error(sx.get_exception_name())
-            elif event == '-19-':
-                self.set_nozzle('19.05', window['-19-'].get())
-            elif event == '-25-':
-                self.set_nozzle('25.4', window['-25-'].get())
-            elif event == '-38-':
-                self.set_nozzle('38.1', window['-38-'].get())
-            elif event == '-50-':
-                self.set_nozzle('50.8', window['-50-'].get())
-            elif event == '-76-':
-                self.set_nozzle('76.2', window['-76-'].get())
+                elif event == '-19-':
+                    self.set_nozzle('19.05', window['-19-'].get())
+                elif event == '-25-':
+                    self.set_nozzle('25.4', window['-25-'].get())
+                elif event == '-38-':
+                    self.set_nozzle('38.1', window['-38-'].get())
+                elif event == '-50-':
+                    self.set_nozzle('50.8', window['-50-'].get())
+                elif event == '-76-':
+                    self.set_nozzle('76.2', window['-76-'].get())
 
-            elif event == '-belimo-':
-                self.set_actuator('Belimo')
-            elif event == '-siemens-':
-                self.set_actuator('Siemens')
-            elif event == '-gruner-':
-                self.set_actuator('Gruner')
-            elif event == '-none-':
-                self.set_actuator('None')
-            elif event == '-custom-':
-                pass
+                elif event == '-belimo-':
+                    self.set_actuator('Belimo')
+                    if values['-vav-']:
+                        self.actuator.application_vav()
+                    else:
+                        self.actuator.application_pos()
+                elif event == '-siemens-':
+                    self.set_actuator('Siemens')
+                    if values['-vav-']:
+                        self.actuator.application_vav()
+                    else:
+                        self.actuator.application_pos()
+                elif event == '-gruner-':
+                    self.set_actuator('Gruner')
+                elif event == '-none-':
+                    self.set_actuator('None')
+                elif event == '-custom-':
+                    pass
 
-            elif event == 'Open':
-                self.actuator.actuator_open()
+                elif event == 'Open':
+                    self.actuator.actuator_open()
 
-            elif event == 'Close':
-                self.actuator.actuator_close()
+                elif event == 'Close':
+                    self.actuator.actuator_close()
 
-            elif event == '-vav-':
-                self.actuator.application_vav()
+                elif event == '-vav-':
+                    self.actuator.application_vav()
 
-            elif event == '-pos-':
-                self.actuator.application_pos()
+                elif event == '-pos-':
+                    if values['-gruner-']:
+                        raise StandException('Not allowed for Gruner')
+                    else:
+                        self.actuator.application_pos()
 
-            elif event == 'Submit':
-                self.actuator.set_setpoint(int(values['-setpoint-']))
+                elif event == 'Submit':
+                    self.actuator.set_setpoint(int(values['-setpoint-']))
 
-            elif event == 'Set Fan':
-                self.fan.set_fan_power(int(values['-fan_load-']))
+                elif event == 'Set Fan':
+                    self.fan.set_fan_power(int(values['-fan_load-']))
 
-            elif event == 'Get Flow [m3/h]':
-                flow = []
-                for i in range(5):
-                    flow.append(self.nozzles.nozzle_air_flow(self.nozzles.read_nozzle_pressure()))
-                    time.sleep(1)
-                average_flow = sum(flow)/5
-                window['-airflow-'].update(str(average_flow))
+                elif event == 'Get Flow [m3/h]':
+                    flow = []
+                    for i in range(5):
+                        pressure = self.nozzles.read_nozzle_pressure()
+                        flow.append(self.nozzles.nozzle_air_flow(pressure))
+                        time.sleep(1)
+                    average_flow = sum(flow)/5
+                    window['-airflow-'].update(str(average_flow))
+            except StandException as sx:
+                sg.popup_error(sx.get_exception_name())
 
         window.close()
