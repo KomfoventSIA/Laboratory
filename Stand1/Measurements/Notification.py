@@ -1,30 +1,31 @@
-from Measurements.Stand_Exception import StandException
-import  os
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+
 class Notification:
     def __init__(self):
-        self.mail_config = {}
-
-        self.users: list = []
-        self.config_file_path = os.getcwd() + '.mailconfig'
-        try:
-            with open('.mailconfig', 'r') as mail_config_file:
-                while True:
-                    line = mail_config_file.readline()
-                    print(line, line[0], line[1])
-                    if line[0] == 'User':
-                        self.users.append(line[1])
-                        print(line[1])
-                    if not line:
-                        break
-        except:
-            StandException("'.mailconfig' file do not exist")
-
-
         self.notification: bool = False
-        self.smtp_host: str = 'mx.ays.lt'
-        self.mail_port: int = 587
-        self.mail_login: str = ''
-        self.mail_password: str = ''
-        self.mail_from: str = ''
-        self.mail_to: str = ''
-        self.mail_subject: str = ''
+
+        self.mail_config: dict = {'host': '',
+                                  'port': 0,
+                                  'login': '',
+                                  'password': '',
+                                  'from': '',
+                                  'to': '',
+                                  'subject': '',
+                                  'message': ''}
+
+    def send_mail_notification(self):
+        s = smtplib.SMTP(host=self.mail_config['host'], port=self.mail_config['port'])
+        s.login(self.mail_config['login'], self.mail_config['password'])
+
+        msg = MIMEMultipart()
+
+        msg['From'] = self.mail_config['from']
+        msg['To'] = self.mail_config['to']
+        msg['Subject'] = self.mail_config['subject']
+        msg.attach(MIMEText(self.mail_config['message']))
+        s.send_message(msg)
+        del msg
+

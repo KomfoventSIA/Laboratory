@@ -6,6 +6,8 @@ from GUI.ModbusWindow import ModbusWindow
 from GUI.MeasConfigWindow import ConfigWindow
 from Measurements.Stand_Exception import StandException
 from GUI.ManualModeWindow import ManualModeWindow
+from GUI.NotificationWindow import NotificationWindow
+from Measurements.Notification import Notification
 
 
 class MainWindow:
@@ -126,6 +128,7 @@ class MainWindow:
     def create_main_window(self):
         window = sg.Window('Stand Nr.1', self.layout, size=(915, 500))
         measurements = Measurements()
+        notification = Notification()
 
         # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Create Window Function Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -173,6 +176,9 @@ class MainWindow:
             elif event == 'Manual Mode':
                 mm_window = ManualModeWindow()
                 mm_window.create_manual_window()
+            elif event == 'E-mail Notification':
+                nt_window = NotificationWindow(notification)
+                nt_window.create_notification_window(notification)
             elif event == '-belimo-':
                 measurements.set_actuator('Belimo')
                 measurements.update_table_headers()
@@ -268,11 +274,11 @@ class MainWindow:
                         window['-table-'].update(measurements.table_data)
                     measurements.measurement_end_time()
                     measurements.fan.set_fan_power(0)
+                    if notification.notification:
+                        notification.send_mail_notification()
                     sg.popup_ok('Measurements are finished')
                 except StandException as sx:
                     sg.popup_error(sx.get_exception_name())
-
-
 
         window.close()
 
