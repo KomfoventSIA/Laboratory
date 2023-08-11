@@ -275,9 +275,11 @@ class MainWindow:
                     measurements.measurement_end_time()
                     measurements.fan.set_fan_power(0)
                     if notification.notification:
-                        notification.send_mail_notification()
+                        notification.send_mail_notification('Measurements are finished')
                     sg.popup_ok('Measurements are finished')
                 except StandException as sx:
+                    if notification.notification:
+                        notification.send_mail_notification(sx.get_exception_name())
                     sg.popup_error(sx.get_exception_name())
 
         window.close()

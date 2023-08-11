@@ -163,34 +163,38 @@ class NotificationWindow():
                     while True:
                         line = file.readline()
                         if line[0: 5] == 'Host:':
-                            notfication_config_object.mail_config['host'] = line[6: line.index('\n')]
+                            host = line[6: line.index('\n')]
+                            window['-host-'].update(host)
                         elif line[0: 5] == 'Port:':
-                            notfication_config_object.mail_config['port'] = int(line[6: line.index('\n')])
+                            port = int(line[6: line.index('\n')])
+                            window['-port-'].update(port)
                         elif line[0: 6] == 'Login:':
-                            notfication_config_object.mail_config['login'] = line[7: line.index('\n')]
+                            login = line[7: line.index('\n')]
+                            window['-login-'].update(login)
                         elif line[0: 9] == 'Password:':
-                            notfication_config_object.mail_config['password'] = line[10: line.index('\n')]
+                            password = line[10: line.index('\n')]
+                            window['-password-'].update(password)
                         elif line[0: 5] == 'From:':
-                            notfication_config_object.mail_config['from'] = line[6: line.index('\n')]
+                            mail_from = line[6: line.index('\n')]
+                            window['-from-'].update(mail_from)
                         elif line[0: 3] == 'To:':
-                            notfication_config_object.mail_config['to'] = line[4: line.index('\n')]
+                            to = line[4: line.index('\n')]
+                            window['-to-'].update(to)
                         elif line[0: 8] == 'Subject:':
-                            notfication_config_object.mail_config['subject'] = line[8: line.index('\n')]
-                        elif line[0: 12] == 'DefaultText:':
-                            notfication_config_object.mail_config['message'] = line[13: line.index('\n')]
+                            subject = line[8: line.index('\n')]
+                            window['-subject-'].update(subject)
                         elif not line:
                             break
                         else:
                             break
-                print(notfication_config_object.mail_config)
 
-                window['-host-'].update(notfication_config_object.mail_config['host'])
-                window['-port-'].update(notfication_config_object.mail_config['port'])
-                window['-login-'].update(notfication_config_object.mail_config['login'])
-                window['-password-'].update(notfication_config_object.mail_config['password'])
-                window['-from-'].update(notfication_config_object.mail_config['from'])
-                window['-to-'].update(notfication_config_object.mail_config['to'])
-                window['-subject-'].update(notfication_config_object.mail_config['subject'])
+                # window['-host-'].update(notfication_config_object.mail_config['host'])
+                # window['-port-'].update(notfication_config_object.mail_config['port'])
+                # window['-login-'].update(notfication_config_object.mail_config['login'])
+                # window['-password-'].update(notfication_config_object.mail_config['password'])
+                # window['-from-'].update(notfication_config_object.mail_config['from'])
+                # window['-to-'].update(notfication_config_object.mail_config['to'])
+                #window['-subject-'].update(notfication_config_object.mail_config['subject'])
 
             elif event == 'Save and Close':
                 notfication_config_object.mail_config['host'] = values['-host-']
@@ -200,7 +204,6 @@ class NotificationWindow():
                 notfication_config_object.mail_config['from'] = values['-from-']
                 notfication_config_object.mail_config['to'] = values['-to-']
                 notfication_config_object.mail_config['subject'] = values['-subject-']
-                print(notfication_config_object.mail_config)
                 window.close()
 
         window.close()
