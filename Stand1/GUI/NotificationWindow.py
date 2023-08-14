@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import os
+from Measurements.Stand_Exception import StandException
 
 
 class NotificationWindow():
@@ -159,42 +160,45 @@ class NotificationWindow():
                     window['-subject-'].update(disabled=True)
 
             elif event == '-submit-':
-                with open(values['-file_path-'], 'r') as file:
-                    while True:
-                        line = file.readline()
-                        if line[0: 5] == 'Host:':
-                            host = line[6: line.index('\n')]
-                            window['-host-'].update(host)
-                        elif line[0: 5] == 'Port:':
-                            port = int(line[6: line.index('\n')])
-                            window['-port-'].update(port)
-                        elif line[0: 6] == 'Login:':
-                            login = line[7: line.index('\n')]
-                            window['-login-'].update(login)
-                        elif line[0: 9] == 'Password:':
-                            password = line[10: line.index('\n')]
-                            window['-password-'].update(password)
-                        elif line[0: 5] == 'From:':
-                            mail_from = line[6: line.index('\n')]
-                            window['-from-'].update(mail_from)
-                        elif line[0: 3] == 'To:':
-                            to = line[4: line.index('\n')]
-                            window['-to-'].update(to)
-                        elif line[0: 8] == 'Subject:':
-                            subject = line[8: line.index('\n')]
-                            window['-subject-'].update(subject)
-                        elif not line:
-                            break
-                        else:
-                            break
+                try:
+                    if not values['-file_path-']:
+                        raise StandException('Choose file *.mailconfig')
+                    else:
+                        with open(values['-file_path-'], 'r') as file:
+                            while True:
+                                line = file.readline()
+                                if line[0: 5] == 'Host:':
+                                    host = line[6: line.index('\n')]
+                                    window['-host-'].update(host)
+                                elif line[0: 5] == 'Port:':
+                                    port = int(line[6: line.index('\n')])
+                                    window['-port-'].update(port)
+                                elif line[0: 6] == 'Login:':
+                                    login = line[7: line.index('\n')]
+                                    window['-login-'].update(login)
+                                elif line[0: 9] == 'Password:':
+                                    password = line[10: line.index('\n')]
+                                    window['-password-'].update(password)
+                                elif line[0: 5] == 'From:':
+                                    mail_from = line[6: line.index('\n')]
+                                    window['-from-'].update(mail_from)
+                                elif line[0: 3] == 'To:':
+                                    to = line[4: line.index('\n')]
+                                    window['-to-'].update(to)
+                                elif line[0: 8] == 'Subject:':
+                                    subject = line[8: line.index('\n')]
+                                    window['-subject-'].update(subject)
+                                elif line[0: 3] == 'eof':
+                                    print(line[0: 3])
+                                    break
+                                else:
+                                    raise StandException('Choose correct file *.mailconfig')
 
-                # window['-host-'].update(notfication_config_object.mail_config['host'])
-                # window['-port-'].update(notfication_config_object.mail_config['port'])
-                # window['-login-'].update(notfication_config_object.mail_config['login'])
-                # window['-password-'].update(notfication_config_object.mail_config['password'])
-                # window['-from-'].update(notfication_config_object.mail_config['from'])
-                # window['-to-'].update(notfication_config_object.mail_config['to'])
-                #window['-subject-'].update(notfication_config_object.mail_config['subject'])
+                except StandException as sx:
+                    sg.popup_error(sx.get_exception_name())
+
+
+
 
             elif event == 'Save and Close':
                 notfication_config_object.mail_config['host'] = values['-host-']
