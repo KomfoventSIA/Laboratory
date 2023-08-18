@@ -8,6 +8,7 @@ from Measurements.Stand_Exception import StandException
 from GUI.ManualModeWindow import ManualModeWindow
 from GUI.NotificationWindow import NotificationWindow
 from Measurements.Notification import Notification
+from threading import Thread
 
 
 class MainWindow:
@@ -115,14 +116,17 @@ class MainWindow:
 
         # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         start = sg.Button('START', expand_x=True, expand_y=True,  pad=((5, 5), (5, 5)))
+        stop = sg.Button('STOP', expand_x=True, expand_y=True,  pad=((5, 5), (5, 5)))
+        button_column = sg.Column([[start], [stop]], expand_x=True, expand_y=True,)
 
         org_column = sg.Column([[choose_actuator_frame],
                                 [set_nozzles_frame]])
 
         self.layout = [[menu],
                        [org_column, addition_device_frame],
-                       [table_conf_frame, start],
+                       [table_conf_frame, button_column],
                        [tableframe]]
+        self.allow_measurement: bool = False
 
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Create Window Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     def create_main_window(self):
@@ -262,6 +266,7 @@ class MainWindow:
                 except StandException as sx:
                     sg.popup_error(sx.get_exception_name())
             elif event == 'START':
+                self.allow_measurement = True
                 try:
                     measurements.measurement_start_time()
                     if measurements.table_headers_config['actuator type'] != 'None':
@@ -269,18 +274,31 @@ class MainWindow:
                         print('Actuator opens. Sleep time: ', measurements.actuator_open_time)
                         time.sleep(measurements.actuator_open_time)
                     for index in range(1, len(measurements.table_data)):
-                        measurements.set_measurement_conditions(index)
-                        measurements.make_measurement(index)
-                        window['-table-'].update(measurements.table_data)
+                        if self.allow_measurement:
+                            t = Thread(target=measurements.make_measure, args=(index,))
+                            t.start()
+                            # measurements.set_measurement_conditions(index)
+                            # measurements.make_measurement(index)
+                            window['-table-'].update(measurements.table_data)
+                        else:
+                            break
                     measurements.measurement_end_time()
                     measurements.fan.set_fan_power(0)
+                    self.allow_measurement = False
                     if notification.notification:
                         notification.send_mail_notification('Measurements are finished')
                     sg.popup_ok('Measurements are finished')
                 except StandException as sx:
+                    self.allow_measurement = False
                     if notification.notification:
                         notification.send_mail_notification(sx.get_exception_name())
                     sg.popup_error(sx.get_exception_name())
 
+            elif event == 'STOP':
+                self.allow_measurement = False
+                time.sleep(1)
+                window['-table-'].update(measurements.table_data)
+                sg.popup_ok('Measurements are stopped')
+                
         window.close()
 
