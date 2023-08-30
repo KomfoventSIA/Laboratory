@@ -8,7 +8,7 @@ from Measurements.Stand_Exception import StandException
 from GUI.ManualModeWindow import ManualModeWindow
 from GUI.NotificationWindow import NotificationWindow
 from Measurements.Notification import Notification
-from threading import Thread
+from threading import Thread, Event
 
 
 class MainWindow:
@@ -116,17 +116,18 @@ class MainWindow:
 
         # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         start = sg.Button('START', expand_x=True, expand_y=True,  pad=((5, 5), (5, 5)))
-        stop = sg.Button('STOP', expand_x=True, expand_y=True,  pad=((5, 5), (5, 5)))
+        stop = sg.Button('STOP', expand_x=True, expand_y=True,  pad=((5, 5), (5, 5)), disabled=True)
         button_column = sg.Column([[start], [stop]], expand_x=True, expand_y=True,)
 
         org_column = sg.Column([[choose_actuator_frame],
                                 [set_nozzles_frame]])
+        measurement_stop = sg.Button('MStop', key='-msstop-', visible=False)
 
         self.layout = [[menu],
                        [org_column, addition_device_frame],
-                       [table_conf_frame, button_column],
+                       [table_conf_frame, button_column, measurement_stop],
                        [tableframe]]
-        self.allow_measurement: bool = False
+
 
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Create Window Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     def create_main_window(self):
@@ -266,39 +267,108 @@ class MainWindow:
                 except StandException as sx:
                     sg.popup_error(sx.get_exception_name())
             elif event == 'START':
-                self.allow_measurement = True
-                try:
-                    measurements.measurement_start_time()
-                    if measurements.table_headers_config['actuator type'] != 'None':
-                        measurements.actuator.actuator_open()
-                        print('Actuator opens. Sleep time: ', measurements.actuator_open_time)
-                        time.sleep(measurements.actuator_open_time)
-                    for index in range(1, len(measurements.table_data)):
-                        if self.allow_measurement:
-                            t = Thread(target=measurements.make_measure, args=(index,))
-                            t.start()
-                            # measurements.set_measurement_conditions(index)
-                            # measurements.make_measurement(index)
+                def make_measure():
+                    try:
+                        measurements.measurement_start_time()
+                        if measurements.table_headers_config['actuator type'] != 'None':
+                            measurements.actuator.actuator_open()
+                            print('Actuator opens. Sleep time: ', measurements.actuator_open_time)
+                            time.sleep(measurements.actuator_open_time)
+                            measurements.actuator.override_mode_off()
+                            measurements.actuator.application_pos()
+                            time.sleep(measurements.actuator_change_position_time)
+                        for index in range(1, len(measurements.table_data)):
+                            measurements.set_measurement_conditions(index)
+                            measurements.make_measurement(index)
                             window['-table-'].update(measurements.table_data)
-                        else:
-                            break
-                    measurements.measurement_end_time()
-                    measurements.fan.set_fan_power(0)
-                    self.allow_measurement = False
-                    if notification.notification:
-                        notification.send_mail_notification('Measurements are finished')
-                    sg.popup_ok('Measurements are finished')
-                except StandException as sx:
-                    self.allow_measurement = False
-                    if notification.notification:
-                        notification.send_mail_notification(sx.get_exception_name())
-                    sg.popup_error(sx.get_exception_name())
 
-            elif event == 'STOP':
-                self.allow_measurement = False
+                        measurements.measurement_end_time()
+                        measurements.fan.set_fan_power(0)
+                        if notification.notification:
+                            notification.send_mail_notification('Measurements are finished')
+                        window['-msstop-'].click()
+
+                    except StandException as sx:
+                        if notification.notification:
+                            notification.send_mail_notification(sx.get_exception_name())
+
+                window['-belimo-'].update(disabled=True)
+                window['-siemens-'].update(disabled=True)
+                window['-gruner-'].update(disabled=True)
+                window['-none-'].update(disabled=True)
+                window['-sbp-'].update(disabled=True)
+                window['-19-'].update(disabled=True)
+                window['-25-'].update(disabled=True)
+                window['-38-'].update(disabled=True)
+                window['-50-'].update(disabled=True)
+                window['-76-'].update(disabled=True)
+                window['-add_dev-'].update(disabled=True)
+                if window['-add_dev-'].get():
+                    window['-dev_name-'].update(disabled=True)
+                    window['-ad_mb_id-'].update(disabled=True)
+                    window['-ad_mb_command-'].update(disabled=True)
+                    window['-ad_mb_reg-'].update(disabled=True)
+                    window['-ad_coef-'].update(disabled=True)
+                window['-sbp-'].update(disabled=True)
+                window['Delete All'].update(disabled=True)
+                window['Submit'].update(disabled=True)
+                window['START'].update(disabled=True)
+                window['STOP'].update(disabled=False)
+
+                t = Thread(target=make_measure, args=())
+                t.start()
+
+            if event == '-msstop-':
+                sg.popup_ok('Measurements are finished')
+                window['-belimo-'].update(disabled=False)
+                window['-siemens-'].update(disabled=False)
+                window['-gruner-'].update(disabled=False)
+                window['-none-'].update(disabled=False)
+                window['-sbp-'].update(disabled=False)
+                window['-19-'].update(disabled=False)
+                window['-25-'].update(disabled=False)
+                window['-38-'].update(disabled=False)
+                window['-50-'].update(disabled=False)
+                window['-76-'].update(disabled=False)
+                window['-add_dev-'].update(disabled=False)
+                if window['-add_dev-'].get():
+                    window['-dev_name-'].update(disabled=False)
+                    window['-ad_mb_id-'].update(disabled=False)
+                    window['-ad_mb_command-'].update(disabled=False)
+                    window['-ad_mb_reg-'].update(disabled=False)
+                    window['-ad_coef-'].update(disabled=False)
+                window['-sbp-'].update(disabled=False)
+                window['Delete All'].update(disabled=False)
+                window['Submit'].update(disabled=False)
+                window['START'].update(disabled=False)
+                window['STOP'].update(disabled=True)
+
+            if event == 'STOP':
                 time.sleep(1)
                 window['-table-'].update(measurements.table_data)
                 sg.popup_ok('Measurements are stopped')
-                
+                window['-belimo-'].update(disabled=False)
+                window['-siemens-'].update(disabled=False)
+                window['-gruner-'].update(disabled=False)
+                window['-none-'].update(disabled=False)
+                window['-sbp-'].update(disabled=False)
+                window['-19-'].update(disabled=False)
+                window['-25-'].update(disabled=False)
+                window['-38-'].update(disabled=False)
+                window['-50-'].update(disabled=False)
+                window['-76-'].update(disabled=False)
+                window['-add_dev-'].update(disabled=False)
+                if window['-add_dev-'].get():
+                    window['-dev_name-'].update(disabled=False)
+                    window['-ad_mb_id-'].update(disabled=False)
+                    window['-ad_mb_command-'].update(disabled=False)
+                    window['-ad_mb_reg-'].update(disabled=False)
+                    window['-ad_coef-'].update(disabled=False)
+                window['-sbp-'].update(disabled=False)
+                window['Delete All'].update(disabled=False)
+                window['Submit'].update(disabled=False)
+                window['START'].update(disabled=False)
+                window['STOP'].update(disabled=True)
+
         window.close()
 

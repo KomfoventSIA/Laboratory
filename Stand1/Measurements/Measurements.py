@@ -1,3 +1,4 @@
+import threading
 from os.path import exists
 from time import gmtime, strftime  # for time mark
 from Hardware.Class_Fan import Fan
@@ -12,6 +13,7 @@ import pandas as pd
 import numpy
 import xlsxwriter
 import time
+from threading import Event
 
 
 class Measurements:
@@ -40,7 +42,8 @@ class Measurements:
         self.nozzles = Nozzles()
         self.actuator = Actuator()
         self.additional_device = Device()
-        print(self.additional_device.device_name)
+        self.thread_event = threading.Event()
+        self.nozles_flow_constantly: int
 
     def measurement_start_time(self):
         self.measurement_start = strftime("%Y-%m-%d %H:%M:%S", gmtime())
@@ -199,8 +202,8 @@ class Measurements:
                 pass
             elif column == 'Blade Position, %':
                 print('Blade pisitioning is active. Sleep time: ', self.actuator_change_position_time)
-                self.actuator.override_mode_off()
-                self.actuator.application_pos()
+                # self.actuator.override_mode_off()
+                # self.actuator.application_pos()
                 ap_setpoint = self.table_data[data][column_index]
                 self.actuator.set_setpoint(int(ap_setpoint))
                 time.sleep(self.actuator_change_position_time)
@@ -264,76 +267,29 @@ class Measurements:
         print('Repeated measurements: ', self.meas_step)
         print('Delay between measurements: ', self.meas_step_delay)
         print(self.table_data[data])
-    def make_measure(self, data: int):
-        nozzle_pressure = []  # Array of measured pressures in order to get average
-        nozzle_flow = []
-        actuator_flow = []  # Array of measured actuator air flow in order to get average
-        actuator_pressure = []  # Array of measured actuator pressure in order to get average
-        addition_device = []  # Array of measured parameter from external device (pressure) in order to get average
-        for step in range(self.meas_step):
-            for column in self.table_data[0]:
-                column_index = self.table_data[0].index(column)
-                if column == 'Nr':
-                    pass
-                elif column == 'Blade Position, %':
-                    if step == 0:
-                        print('Blade pisitioning is active. Sleep time: ', self.actuator_change_position_time)
-                        self.actuator.override_mode_off()
-                        self.actuator.application_pos()
-                        ap_setpoint = self.table_data[data][column_index]
-                        self.actuator.set_setpoint(int(ap_setpoint))
-                        time.sleep(self.actuator_change_position_time)
-                    else:
-                        pass
-                elif column == 'Fan Power, %':
-                    if step == 0:
-                        f_setpoint = self.table_data[data][column_index]
-                        print('Fan power set: ', f_setpoint)
-                        self.fan.set_fan_power(int(f_setpoint))
-                        print('Measurement delay: ', self.measurement_delay)
-                        time.sleep(self.measurement_delay)
-                    else:
-                        pass
-                elif column == 'Nozzle Pressure, Pa':
-                    print('Column nozzle pressure')
-                    nozzle_pressure_help_var = self.nozzles.read_nozzle_pressure()
-                    nozzle_pressure.append(nozzle_pressure_help_var)
-                    nozzle_flow.append(self.nozzles.nozzle_air_flow(nozzle_pressure_help_var))
-                    if step == self.meas_step - 1:
-                        print('Nozzle pressure: ', nozzle_pressure)
-                        average_nozzle_pressure = round(sum(nozzle_pressure) / self.meas_step, 1)
-                        self.table_data[data][column_index] = average_nozzle_pressure
-                elif column == 'Nozzle Flow, m3/h':
-                    print('Column nozzle flow')
-                    if step == self.meas_step - 1:
-                        print('Nozzle flow: ', nozzle_flow)
-                        average_nozzle_flow = round(sum(nozzle_flow) / self.meas_step, 1)
-                        self.table_data[data][column_index] = average_nozzle_flow
-                elif column == 'Actuator Pressure, Pa':
-                    print('Column actuator pressure')
-                    actuator_pressure.append(self.actuator.read_pressure())
-                    if step == self.meas_step - 1:
-                        print('Actuator pressure: ', actuator_pressure)
-                        average_actuator_pressure = round(sum(actuator_pressure) / self.meas_step, 1)
-                        self.table_data[data][column_index] = average_actuator_pressure
-                elif column == 'Actuator Flow, m3/h':
-                    print('Column actuator flow')
-                    actuator_flow.append(self.actuator.read_airflow())
-                    if step == self.meas_step - 1:
-                        print('Actuator flow: ', actuator_flow)
-                        average_actuator_flow = round(sum(actuator_flow) / self.meas_step)
-                        self.table_data[data][column_index] = average_actuator_flow
-                elif column == self.additional_device.device_name:
-                    print('Column addition device')
-                    addition_device.append(self.additional_device.read_from_device())
-                    if step == self.meas_step - 1:
-                        print('Addition device: ', addition_device)
-                        average_addition_device = round(sum(addition_device) / self.meas_step, 1)
-                        self.table_data[data][column_index] = average_addition_device
-                else:
-                    pass
-                time.sleep(self.meas_step_delay)
-        print('Repeated measurements: ', self.meas_step)
-        print('Delay between measurements: ', self.meas_step_delay)
-        print(self.table_data[data])
+
+    def make_measure(self):
+        self.measurement_start_time()
+        if self.table_headers_config['actuator type'] != 'None':
+            self.actuator.actuator_open()
+            print('Actuator opens. Sleep time: ', self.actuator_open_time)
+            time.sleep(self.actuator_open_time)
+        for index in range(1, len(self.table_data)):
+            self.set_measurement_conditions(index)
+            self.make_measurement(index)
+        self.measurement_end_time()
+        self.fan.set_fan_power(0)
+
+    def read_nozles_flow(self):
+        pressure = self.nozzles.read_nozzle_pressure()
+        return self.nozzles.nozzle_air_flow(pressure)
+
+    def constantly_read_nozles_flow(self):
+        while True:
+            self.thread_event.clear()
+            time.sleep(1)
+            self.nozles_flow_constantly = self.read_nozles_flow()
+            self.thread_event.set()
+
+
 

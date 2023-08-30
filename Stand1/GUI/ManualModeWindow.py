@@ -3,6 +3,7 @@ from GUI.ModbusWindow import ModbusWindow
 from Measurements.Stand_Exception import StandException
 import PySimpleGUI as sg
 import time
+from threading import Thread
 
 class ManualModeWindow(Measurements):
     def __init__(self):
@@ -66,6 +67,8 @@ class ManualModeWindow(Measurements):
 
     def create_manual_window(self):
         window = sg.Window('Stand Nr.2 Manual mode', self.layout)
+        # t1 = Thread(target=self.constantly_read_nozles_flow(), args=())
+        # t1.start()
 
         while True:
             event, values = window.read()
@@ -128,13 +131,18 @@ class ManualModeWindow(Measurements):
                     self.fan.set_fan_power(int(values['-fan_load-']))
 
                 elif event == 'Get Flow [m3/h]':
-                    flow = []
-                    for i in range(5):
-                        pressure = self.nozzles.read_nozzle_pressure()
-                        flow.append(self.nozzles.nozzle_air_flow(pressure))
-                        time.sleep(1)
-                    average_flow = sum(flow)/5
-                    window['-airflow-'].update(str(average_flow))
+                    # window['Get Flow [m3/h]'].click()
+                    window['-airflow-'].update(str(self.read_nozles_flow()))
+
+                # elif event == 'Get Flow [m3/h]':
+                    # flow = []
+                    # for i in range(5):
+                    #     pressure = self.nozzles.read_nozzle_pressure()
+                    #     flow.append(self.nozzles.nozzle_air_flow(pressure))
+                    #     time.sleep(1)
+                    # average_flow = sum(flow)/5
+                    # window['-airflow-'].update(str(average_flow))
+
             except StandException as sx:
                 sg.popup_error(sx.get_exception_name())
 
