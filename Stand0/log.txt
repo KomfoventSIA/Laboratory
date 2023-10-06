@@ -1,0 +1,1328 @@
+2023-08-21 08:46:47 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 08:46:47 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 08:46:57 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 08:46:57 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 08:47:07 bytearray(b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2') To Port
+
+2023-08-21 08:47:07 b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2' From Port
+
+2023-08-21 08:48:07 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 08:48:07 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 08:48:18 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:48:18 b'\x01\x03\x02\x01\xe0\xb8\\' From Port
+
+2023-08-21 08:48:27 bytearray(b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2') To Port
+
+2023-08-21 08:48:27 b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2' From Port
+
+2023-08-21 08:48:39 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:48:39 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:48:50 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:48:50 b'\x02\x03\x02\x00\x01=\x84' From Port
+
+2023-08-21 08:49:22 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:49:22 b'\x01\x03\x02\x01\xdf\xf8L' From Port
+
+2023-08-21 08:49:26 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 08:49:26 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 08:49:36 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 08:49:36 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 08:49:38 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:49:39 b'\x01\x03\x02\x01\xddy\x8d' From Port
+
+2023-08-21 08:49:43 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:49:43 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:49:46 bytearray(b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2') To Port
+
+2023-08-21 08:49:46 b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2' From Port
+
+2023-08-21 08:49:54 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:49:54 b'\x02\x03\x02\x00\x06|F' From Port
+
+2023-08-21 08:50:00 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:50:00 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:50:11 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:50:11 b'\x02\x03\x02\x00\x07\xbd\x86' From Port
+
+2023-08-21 08:50:25 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:50:25 b'\x01\x03\x02\x01\xf0\xb9\x90' From Port
+
+2023-08-21 08:50:42 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:50:42 b'\x01\x03\x02\x01\xe4\xb9\x9f' From Port
+
+2023-08-21 08:50:46 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:50:46 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:50:57 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:50:57 b'\x01\x03\x02\x01\xedy\x99' From Port
+
+2023-08-21 08:51:03 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:51:03 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:51:14 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:51:14 b'\x02\x03\x02\x00\x07\xbd\x86' From Port
+
+2023-08-21 08:51:18 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:51:18 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:51:29 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:51:29 b'\x02\x03\x02\x00\x07\xbd\x86' From Port
+
+2023-08-21 08:51:45 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:51:45 b'\x01\x03\x02\x01\xdb\xf9\x8f' From Port
+
+2023-08-21 08:52:00 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:52:00 b'\x01\x03\x02\x01\xe7\xf9\x9e' From Port
+
+2023-08-21 08:52:07 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:52:07 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:52:18 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:52:18 b'\x02\x03\x02\x00\x07\xbd\x86' From Port
+
+2023-08-21 08:52:22 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:52:22 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:52:33 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:52:33 b'\x02\x03\x02\x00\x07\xbd\x86' From Port
+
+2023-08-21 08:53:04 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 08:53:04 b'\x01\x03\x02\x01\xf0\xb9\x90' From Port
+
+2023-08-21 08:53:25 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 08:53:25 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 08:53:36 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 08:53:36 b'\x02\x03\x02\x00\x07\xbd\x86' From Port
+
+2023-08-21 09:01:36 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 09:01:36 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 09:01:46 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:01:46 b'\x01\x03\x02\x0e\x04\xbd\xe7' From Port
+
+2023-08-21 09:01:48 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:01:48 b'\x01\x03\x02\x0e\x15}\xeb' From Port
+
+2023-08-21 09:01:50 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:01:50 b'\x01\x03\x02\x0eI}\xd2' From Port
+
+2023-08-21 09:01:52 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:01:52 b'\x01\x03\x02\x0e\x15}\xeb' From Port
+
+2023-08-21 09:01:54 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:01:54 b'\x01\x03\x02\x0eA|\x14' From Port
+
+2023-08-21 09:02:05 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 09:02:05 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 09:05:15 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 09:05:15 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 09:05:25 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 09:05:25 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 09:05:35 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 09:05:35 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 09:05:56 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:05:56 b'\x01\x03\x02\x02O\xf8\xd0' From Port
+
+2023-08-21 09:06:18 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 09:06:18 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 09:06:29 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 09:06:29 b'\x02\x03\x02\x01"}\xcd' From Port
+
+2023-08-21 09:07:00 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:07:00 b'\x01\x03\x02\x02`\xb9\x0c' From Port
+
+2023-08-21 09:07:21 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 09:07:21 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 09:07:32 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 09:07:32 b'\x02\x03\x02\x01 \xfc\x0c' From Port
+
+2023-08-21 09:08:03 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:08:03 b'\x01\x03\x02\x02[\xf8\xdf' From Port
+
+2023-08-21 09:08:24 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 09:08:24 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 09:08:36 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 09:08:36 b'\x02\x03\x02\x01\x1f\xbc\x1c' From Port
+
+2023-08-21 09:15:44 bytearray(b'\x01\x06\x00\xcb\x01,\xf8y') To Port
+
+2023-08-21 09:15:44 b'\x01\x06\x00\xcb\x01,\xf8y' From Port
+
+2023-08-21 09:15:54 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-21 09:15:54 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-21 09:16:45 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 09:16:49 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 09:22:14 bytearray(b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2') To Port
+
+2023-08-21 09:22:14 b'\x01\x06\x00\xcb\x00\xc8\xf9\xa2' From Port
+
+2023-08-21 09:23:25 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:23:25 b'\x01\x03\x02\x00T\xb9\xbb' From Port
+
+2023-08-21 09:24:06 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:24:06 b'\x01\x03\x02\x00R9\xb9' From Port
+
+2023-08-21 09:24:47 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:24:47 b'\x01\x03\x02\x00W\xf9\xba' From Port
+
+2023-08-21 09:25:17 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 09:25:17 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 09:26:28 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:26:28 b'\x01\x03\x02\x02V9\x1a' From Port
+
+2023-08-21 09:27:09 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:27:09 b'\x01\x03\x02\x02Uy\x1b' From Port
+
+2023-08-21 09:27:51 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 09:27:51 b'\x01\x03\x02\x02Ix\xd2' From Port
+
+2023-08-21 09:28:11 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 09:28:11 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 10:57:25 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 10:57:25 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 10:57:35 bytearray(b'\x01\x06\x00\xcb\x01,\xf8y') To Port
+
+2023-08-21 10:57:35 b'\x01\x06\x00\xcb\x01,\xf8y' From Port
+
+2023-08-21 10:58:07 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 10:58:07 b'\x01\x03\x02\x00\xb281' From Port
+
+2023-08-21 10:58:28 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 10:58:28 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 10:58:39 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 10:58:39 b'\x02\x03\x02\x00\x9a|/' From Port
+
+2023-08-21 10:59:10 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 10:59:10 b'\x01\x03\x02\x00\xbc\xb9\xf5' From Port
+
+2023-08-21 10:59:31 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 10:59:31 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 10:59:42 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 10:59:42 b'\x02\x03\x02\x00\x9b\xbd\xef' From Port
+
+2023-08-21 11:00:13 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 11:00:13 b'\x01\x03\x02\x00\xbe84' From Port
+
+2023-08-21 11:00:35 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 11:00:35 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 11:00:46 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 11:00:46 b'\x02\x03\x02\x00\x9c\xfc-' From Port
+
+2023-08-21 11:00:56 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 11:00:56 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 11:01:27 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 11:01:27 b'\x01\x03\x02\x02K\xf9\x13' From Port
+
+2023-08-21 11:01:48 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 11:01:48 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 11:02:00 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 11:02:00 b'\x02\x03\x02\x01\x1b\xbd\xdf' From Port
+
+2023-08-21 11:02:31 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 11:02:31 b'\x01\x03\x02\x02B9\x15' From Port
+
+2023-08-21 11:02:52 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 11:02:52 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 11:03:03 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 11:03:03 b'\x02\x03\x02\x01\x1e}\xdc' From Port
+
+2023-08-21 11:03:34 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 11:03:34 b'\x01\x03\x02\x02L\xb8\xd1' From Port
+
+2023-08-21 11:03:55 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 11:03:55 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 11:04:06 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 11:04:06 b'\x02\x03\x02\x01\x1d=\xdd' From Port
+
+2023-08-21 11:04:17 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 11:04:17 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 12:35:13 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 12:35:13 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 12:35:23 bytearray(b'\x01\x06\x00\xcb\x01,\xf8y') To Port
+
+2023-08-21 12:35:23 b'\x01\x06\x00\xcb\x01,\xf8y' From Port
+
+2023-08-21 12:35:55 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:35:55 b'\x01\x03\x02\x00\xd0\xb9\xd8' From Port
+
+2023-08-21 12:36:16 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:36:16 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:36:27 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:36:27 b'\x02\x03\x02\x00\xa1=\xfc' From Port
+
+2023-08-21 12:36:58 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:36:58 b'\x01\x03\x02\x00\xd7\xf8\x1a' From Port
+
+2023-08-21 12:37:19 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:37:19 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:37:30 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:37:30 b'\x02\x03\x02\x00\xa2}\xfd' From Port
+
+2023-08-21 12:37:41 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 12:37:41 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 12:38:12 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:38:12 b'\x01\x03\x02\x02_\xf9\x1c' From Port
+
+2023-08-21 12:38:33 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:38:33 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:38:44 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:38:44 b'\x02\x03\x02\x01 \xfc\x0c' From Port
+
+2023-08-21 12:39:15 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:39:15 b'\x01\x03\x02\x02S\xf9\x19' From Port
+
+2023-08-21 12:39:36 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:39:36 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:39:48 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:39:48 b'\x02\x03\x02\x01 \xfc\x0c' From Port
+
+2023-08-21 12:39:58 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 12:39:58 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 12:40:56 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 12:40:56 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 12:45:04 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-21 12:45:04 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-21 12:45:14 bytearray(b'\x01\x06\x00\xcb\x01,\xf8y') To Port
+
+2023-08-21 12:45:14 b'\x01\x06\x00\xcb\x01,\xf8y' From Port
+
+2023-08-21 12:45:32 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:45:32 b'\x01\x03\x02\x00\xce9\xd0' From Port
+
+2023-08-21 12:45:39 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:45:39 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:45:43 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:45:43 b'\x02\x03\x02\x00\xa2}\xfd' From Port
+
+2023-08-21 12:45:53 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:45:53 b'\x01\x03\x02\x00\xd4\xb8\x1b' From Port
+
+2023-08-21 12:46:00 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:46:00 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:46:04 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:46:04 b'\x02\x03\x02\x00\xa4\xfd\xff' From Port
+
+2023-08-21 12:46:07 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 12:46:07 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 12:46:25 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:46:25 b'\x01\x03\x02\x02[\xf8\xdf' From Port
+
+2023-08-21 12:46:32 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:46:32 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:46:36 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:46:36 b'\x02\x03\x02\x01!=\xcc' From Port
+
+2023-08-21 12:46:46 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:46:46 b'\x01\x03\x02\x02k\xf8\xcb' From Port
+
+2023-08-21 12:46:53 bytearray(b'\x02\x03\x00\xc8\x00\x01\x05\xc7') To Port
+
+2023-08-21 12:46:53 b'\x02\x03\x02\n\x14\xfa\xeb' From Port
+
+2023-08-21 12:46:57 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-21 12:46:57 b'\x02\x03\x02\x01#\xbc\r' From Port
+
+2023-08-21 12:47:01 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 12:47:01 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 12:51:06 bytearray(b'\x01\x06\x00\xcb\x01,\xf8y') To Port
+
+2023-08-21 12:51:06 b'\x01\x06\x00\xcb\x01,\xf8y' From Port
+
+2023-08-21 12:51:22 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:51:22 b'\x01\x03\x02\x00\xd28\x19' From Port
+
+2023-08-21 12:51:43 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:51:43 b'\x01\x03\x02\x00\xd3\xf9\xd9' From Port
+
+2023-08-21 12:51:53 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 12:51:53 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 12:52:09 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:52:09 b'\x01\x03\x02\x02My\x11' From Port
+
+2023-08-21 12:52:30 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 12:52:30 b'\x01\x03\x02\x02W\xf8\xda' From Port
+
+2023-08-21 12:52:41 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 12:52:41 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-21 13:14:16 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-21 13:14:16 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-21 13:14:32 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 13:14:32 b'\x01\x03\x02\x02[\xf8\xdf' From Port
+
+2023-08-21 13:14:53 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 13:14:53 b'\x01\x03\x02\x02W\xf8\xda' From Port
+
+2023-08-21 13:15:04 bytearray(b'\x01\x06\x00\xcb\x01,\xf8y') To Port
+
+2023-08-21 13:15:04 b'\x01\x06\x00\xcb\x01,\xf8y' From Port
+
+2023-08-21 13:15:20 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 13:15:20 b'\x01\x03\x02\x00\xcf\xf8\x10' From Port
+
+2023-08-21 13:15:41 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 13:15:41 b'\x01\x03\x02\x00\xd3\xf9\xd9' From Port
+
+2023-08-21 13:15:52 bytearray(b'\x01\x06\x00\xcb\x02X\xf8\xae') To Port
+
+2023-08-21 13:15:52 b'\x01\x06\x00\xcb\x02X\xf8\xae' From Port
+
+2023-08-21 13:16:08 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 13:16:08 b'\x01\x03\x02\x03H\xb8\x82' From Port
+
+2023-08-21 13:16:29 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-21 13:16:29 b'\x01\x03\x02\x03@\xb9D' From Port
+
+2023-08-21 13:16:39 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-21 13:16:39 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 07:30:32 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:32 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:30:34 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:34 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:30:36 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:36 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:30:38 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:38 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:30:41 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:41 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:30:43 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:43 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:30:45 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:45 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:30:47 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:47 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:30:49 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:49 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:30:51 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:51 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:30:53 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:53 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:30:56 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:56 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:30:58 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:30:58 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:00 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:00 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:02 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:02 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:04 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:04 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:06 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:06 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:31:08 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:08 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:31:11 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:11 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:13 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:13 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:15 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:15 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:17 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:17 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:19 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:19 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:31:21 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:21 b'\x01\x03\x02\xff\xfc\xf9\xf5' From Port
+
+2023-08-28 07:31:23 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:23 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:25 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:25 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:28 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:28 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:31:30 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:30 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:31:32 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:32 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:34 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:34 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:36 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:36 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:31:38 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:38 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:40 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:40 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:31:43 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:43 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:45 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:45 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:47 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:47 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:49 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:49 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:51 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:51 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:53 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:53 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:55 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:55 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:31:57 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:31:57 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:00 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:00 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:02 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:02 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:04 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:04 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:06 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:06 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:08 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:08 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:10 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:10 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:12 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:12 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:32:15 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:15 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:17 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:17 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:19 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:19 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:32:21 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:21 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:32:23 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:23 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:25 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:25 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:32:27 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:27 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:30 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:30 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:32 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:32 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:34 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:34 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:36 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:36 b'\x01\x03\x02\xff\xff\xb9\xf4' From Port
+
+2023-08-28 07:32:38 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:38 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:32:40 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:40 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:42 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:42 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:44 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:44 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:47 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:47 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:49 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:49 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:51 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:51 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:53 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:53 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:55 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:55 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:57 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:57 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:32:59 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:32:59 b'\x01\x03\x02\xff\xfd85' From Port
+
+2023-08-28 07:33:02 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:33:02 b'\x01\x03\x02\xff\xfex4' From Port
+
+2023-08-28 07:40:33 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 07:40:33 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 07:42:33 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-28 07:42:33 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-28 07:43:54 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:43:54 b'\x01\x03\x02\x00\x17\xf8J' From Port
+
+2023-08-28 07:44:16 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 07:44:16 b'\x02\x03\x02\x00\x00\xfcD' From Port
+
+2023-08-28 07:44:47 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:44:47 b'\x01\x03\x02\x00\txB' From Port
+
+2023-08-28 07:45:08 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 07:45:08 b'\x02\x03\x02\x00\x00\xfcD' From Port
+
+2023-08-28 07:45:39 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:45:39 b'\x01\x03\x02\xff\xeax;' From Port
+
+2023-08-28 07:46:00 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 07:46:00 b'\x02\x03\x02\x00\x00\xfcD' From Port
+
+2023-08-28 07:46:10 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 07:46:10 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 07:47:39 bytearray(b'\x02\x06\x00t\x00\x01\x08#') To Port
+
+2023-08-28 07:47:39 b'\x02\x06\x00t\x00\x01\x08#' From Port
+
+2023-08-28 07:47:46 bytearray(b'\x02\x06\x00\x00\x13\x88\x84\xaf') To Port
+
+2023-08-28 07:47:46 b'\x02\x06\x00\x00\x13\x88\x84\xaf' From Port
+
+2023-08-28 07:47:57 bytearray(b'\x02\x06\x00\x01\x00\x02Y\xf8') To Port
+
+2023-08-28 07:47:57 b'\x02\x06\x00\x01\x00\x02Y\xf8' From Port
+
+2023-08-28 07:48:04 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-28 07:48:04 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-28 07:53:34 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 07:53:34 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 07:53:44 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-28 07:53:44 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-28 07:54:15 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 07:54:15 b'\x01\x03\x02\x02\x028\xe5' From Port
+
+2023-08-28 07:54:36 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 07:54:36 b'\x02\x03\x02\x00{\xbcg' From Port
+
+2023-08-28 07:54:47 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 07:54:47 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 08:17:01 bytearray(b'\x02\x06\x00t\x00\x01\x08#') To Port
+
+2023-08-28 08:17:01 b'\x02\x06\x00t\x00\x01\x08#' From Port
+
+2023-08-28 08:17:05 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-28 08:17:05 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-28 08:17:14 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:14 b'\x01\x03\x02\xff\xf7\xb82' From Port
+
+2023-08-28 08:17:17 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:17 b'\x01\x03\x02\xff\xd2y\xe9' From Port
+
+2023-08-28 08:17:18 bytearray(b'\x02\x06\x00\x01\x00\x02Y\xf8') To Port
+
+2023-08-28 08:17:18 b'\x02\x06\x00\x01\x00\x02Y\xf8' From Port
+
+2023-08-28 08:17:46 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:46 b'\x01\x03\x02\x00\x19y\x8e' From Port
+
+2023-08-28 08:17:49 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:49 b'\x01\x03\x02\xff\xef\xb88' From Port
+
+2023-08-28 08:17:52 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:52 b'\x01\x03\x02\x00\x03\xf8E' From Port
+
+2023-08-28 08:17:54 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:54 b'\x01\x03\x02\x00\x11xH' From Port
+
+2023-08-28 08:17:57 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:57 b'\x01\x03\x02\x00\n8C' From Port
+
+2023-08-28 08:17:59 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:17:59 b'\x01\x03\x02\x00"8]' From Port
+
+2023-08-28 08:18:02 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:18:02 b'\x01\x03\x02\x00=y\x95' From Port
+
+2023-08-28 08:25:34 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:34 b'\x01\x03\x02\x04,\xbbY' From Port
+
+2023-08-28 08:25:36 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:36 b'\x01\x03\x02\x04,\xbbY' From Port
+
+2023-08-28 08:25:38 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:38 b'\x01\x03\x02\x045z\x93' From Port
+
+2023-08-28 08:25:39 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:39 b'\x01\x03\x02\x04/\xfbX' From Port
+
+2023-08-28 08:25:41 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:41 b'\x01\x03\x02\x04,\xbbY' From Port
+
+2023-08-28 08:25:43 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:43 b'\x01\x03\x02\x04/\xfbX' From Port
+
+2023-08-28 08:25:44 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:44 b'\x01\x03\x02\x04-z\x99' From Port
+
+2023-08-28 08:25:46 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:46 b'\x01\x03\x02\x04,\xbbY' From Port
+
+2023-08-28 08:25:47 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:47 b'\x01\x03\x02\x04 \xbb\\' From Port
+
+2023-08-28 08:25:49 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:49 b'\x01\x03\x02\x04(\xba\x9a' From Port
+
+2023-08-28 08:25:51 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:51 b'\x01\x03\x02\x04+\xfa\x9b' From Port
+
+2023-08-28 08:25:52 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:52 b'\x01\x03\x02\x04-z\x99' From Port
+
+2023-08-28 08:25:54 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:54 b'\x01\x03\x02\x04){Z' From Port
+
+2023-08-28 08:25:55 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:55 b'\x01\x03\x02\x04&;^' From Port
+
+2023-08-28 08:25:57 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:25:57 b'\x01\x03\x02\x043\xfa\x91' From Port
+
+2023-08-28 08:26:00 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:26:00 b'\x01\x03\x02\x042;Q' From Port
+
+2023-08-28 08:29:47 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:29:47 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:30:11 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:30:11 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:31:38 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 08:31:38 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 08:37:33 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:37:33 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:37:36 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-28 08:37:36 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-28 08:37:43 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:37:43 b'\x01\x03\x02\x02"9=' From Port
+
+2023-08-28 08:37:48 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 08:37:48 b'\x02\x03\x02\x01i=\xfa' From Port
+
+2023-08-28 08:37:50 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 08:37:50 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 08:39:41 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:39:41 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:39:43 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-28 08:39:43 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-28 08:40:50 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:40:50 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:40:53 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-28 08:40:53 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-28 08:41:00 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:41:00 b'\x01\x03\x02\x02\xc5yw' From Port
+
+2023-08-28 08:41:05 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 08:41:05 b'\x02\x03\x02\x01F|&' From Port
+
+2023-08-28 08:41:07 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 08:41:07 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 08:44:27 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 08:44:27 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 08:46:06 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-28 08:46:06 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-28 08:46:13 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:46:13 b'\x01\x03\x02\x01b8=' From Port
+
+2023-08-28 08:50:06 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:50:06 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:50:08 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-28 08:50:08 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-28 08:50:15 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:50:15 b'\x01\x03\x02\x02\xb9x\x96' From Port
+
+2023-08-28 08:50:20 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 08:50:20 b'\x02\x03\x02\x01:}\xc7' From Port
+
+2023-08-28 08:51:04 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 08:51:04 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 08:51:07 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-28 08:51:07 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-28 08:51:14 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 08:51:14 b'\x01\x03\x02\x02\xba8\x97' From Port
+
+2023-08-28 08:51:19 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 08:51:19 b'\x02\x03\x02\x01;\xbc\x07' From Port
+
+2023-08-28 08:51:21 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 08:51:21 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 11:32:04 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 11:32:04 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 11:32:07 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-28 11:32:07 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-28 11:32:14 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 11:32:14 b'\x01\x03\x02\x01S\xf9\xe9' From Port
+
+2023-08-28 11:32:19 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 11:32:19 b'\x02\x03\x02\x01c\xbd\xfd' From Port
+
+2023-08-28 11:32:21 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 11:32:21 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 11:34:07 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 11:34:07 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 11:34:09 bytearray(b'\x01\x06\x00\xcb\x01\x90\xf9\xc8') To Port
+
+2023-08-28 11:34:09 b'\x01\x06\x00\xcb\x01\x90\xf9\xc8' From Port
+
+2023-08-28 11:34:16 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-28 11:34:16 b'\x01\x03\x02\x00\x029\x85' From Port
+
+2023-08-28 11:34:21 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-28 11:34:21 b'\x02\x03\x02\x00\x00\xfcD' From Port
+
+2023-08-28 11:34:24 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-28 11:34:24 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-28 11:35:08 bytearray(b'\x02\x06\x00t\x00\x01\x08#') To Port
+
+2023-08-28 11:35:08 b'\x02\x06\x00t\x00\x01\x08#' From Port
+
+2023-08-28 11:35:10 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-28 11:35:10 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-28 11:35:31 bytearray(b'\x02\x06\x00\x01\x00\x02Y\xf8') To Port
+
+2023-08-28 11:35:31 b'\x02\x06\x00\x01\x00\x02Y\xf8' From Port
+
+2023-08-30 07:55:16 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-30 07:55:16 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-30 07:58:01 bytearray(b'\x02\x06\x00\x01\x00\x00\xd89') To Port
+
+2023-08-30 07:58:06 b'\x02\x06\x00\x01\x00\x00\xd89' From Port
+
+2023-08-30 08:01:11 bytearray(b'\x02\x06\x00t\x00\x00\xc9\xe3') To Port
+
+2023-08-30 08:01:17 b'\x02\x06\x00t\x00\x00\xc9\xe3' From Port
+
+2023-08-30 08:01:58 bytearray(b"\x02\x06\x00\x00\'\x10\x93\xc5") To Port
+
+2023-08-30 08:02:02 b"\x02\x06\x00\x00'\x10\x93\xc5" From Port
+
+2023-08-30 08:06:11 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-30 08:06:11 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-30 08:06:21 bytearray(b'\x02\x06\x00t\x00\x00\xc9\xe3') To Port
+
+2023-08-30 08:06:21 b'\x02\x06\x00t\x00\x00\xc9\xe3' From Port
+
+2023-08-30 08:06:21 bytearray(b'\x02\x06\x00\x00\x13\x88\x84\xaf') To Port
+
+2023-08-30 08:06:21 b'\x02\x06\x00\x00\x13\x88\x84\xaf' From Port
+
+2023-08-30 08:06:51 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-30 08:06:51 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-30 08:08:22 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-30 08:08:22 b'\x01\x03\x02\x00\ry\x81' From Port
+
+2023-08-30 08:08:43 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-30 08:08:43 b'\x02\x03\x02\x00\x00\xfcD' From Port
+
+2023-08-30 08:08:54 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-30 08:08:54 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-30 08:10:16 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-30 08:10:16 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-30 08:10:27 bytearray(b'\x02\x06\x00t\x00\x00\xc9\xe3') To Port
+
+2023-08-30 08:10:27 b'\x02\x06\x00t\x00\x00\xc9\xe3' From Port
+
+2023-08-30 08:10:27 bytearray(b'\x02\x06\x00\x00\x13\x88\x84\xaf') To Port
+
+2023-08-30 08:10:27 b'\x02\x06\x00\x00\x13\x88\x84\xaf' From Port
+
+2023-08-30 08:10:57 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-30 08:10:57 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-30 08:12:28 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-30 08:12:28 b'\x01\x03\x02\xff\xe6x>' From Port
+
+2023-08-30 08:12:49 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-30 08:12:49 b'\x02\x03\x02\x00\x00\xfcD' From Port
+
+2023-08-30 08:12:59 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-30 08:12:59 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-30 08:13:55 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-30 08:13:55 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-30 08:16:54 bytearray(b'\x02\x06\x00t\x00\x00\xc9\xe3') To Port
+
+2023-08-30 08:16:58 b'\x02\x06\x00t\x00\x00\xc9\xe3' From Port
+
+2023-08-30 08:19:57 bytearray(b'\x02\x06\x00\x00\x13\x88\x84\xaf') To Port
+
+2023-08-30 08:20:03 b'\x02\x06\x00\x00\x13\x88\x84\xaf' From Port
+
+2023-08-30 08:21:49 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-30 08:21:49 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-30 08:22:51 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-30 08:22:51 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
+2023-08-30 08:24:01 bytearray(b'\x02\x06\x00t\x00\x01\x08#') To Port
+
+2023-08-30 08:24:01 b'\x02\x06\x00t\x00\x01\x08#' From Port
+
+2023-08-30 08:24:03 bytearray(b'\x02\x06\x00t\x00\x00\xc9\xe3') To Port
+
+2023-08-30 08:24:03 b'\x02\x06\x00t\x00\x00\xc9\xe3' From Port
+
+2023-08-30 08:24:30 bytearray(b'\x02\x06\x00\x00\x0f\xa0\x8cq') To Port
+
+2023-08-30 08:24:39 b'\x02\x06\x00\x00\x0f\xa0\x8cq' From Port
+
+2023-08-30 08:28:37 bytearray(b'\x02\x06\x00\x01\x00\x01\x19\xf9') To Port
+
+2023-08-30 08:28:37 b'\x02\x06\x00\x01\x00\x01\x19\xf9' From Port
+
+2023-08-30 08:30:37 bytearray(b'\x02\x06\x00\x01\x00\x00\xd89') To Port
+
+2023-08-30 08:30:37 b'\x02\x06\x00\x01\x00\x00\xd89' From Port
+
+2023-08-30 08:30:37 bytearray(b'\x02\x06\x00t\x00\x00\xc9\xe3') To Port
+
+2023-08-30 08:30:37 b'\x02\x06\x00t\x00\x00\xc9\xe3' From Port
+
+2023-08-30 08:31:08 bytearray(b'\x02\x06\x00\x00\x0f\xa0\x8cq') To Port
+
+2023-08-30 08:31:08 b'\x02\x06\x00\x00\x0f\xa0\x8cq' From Port
+
+2023-08-30 08:31:38 bytearray(b'\x01\x06\x00\xcb\x01\xf4\xf8#') To Port
+
+2023-08-30 08:31:38 b'\x01\x06\x00\xcb\x01\xf4\xf8#' From Port
+
+2023-08-30 08:33:09 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-30 08:33:09 b'\x01\x03\x02\x02\xd0\xb8\xb8' From Port
+
+2023-08-30 08:33:30 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-30 08:33:30 b'\x02\x03\x02\x00M<q' From Port
+
+2023-08-30 08:34:11 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-30 08:34:11 b'\x01\x03\x02\x02\xa9yZ' From Port
+
+2023-08-30 08:34:32 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-30 08:34:32 b'\x02\x03\x02\x00M<q' From Port
+
+2023-08-30 08:35:14 bytearray(b'\x01\x03\x01\x03\x00\x01u\xf6') To Port
+
+2023-08-30 08:35:14 b'\x01\x03\x02\x02\xc8\xb8\xb2' From Port
+
+2023-08-30 08:35:35 bytearray(b'\x02\x03\x00\x07\x00\x015\xf8') To Port
+
+2023-08-30 08:35:35 b'\x02\x03\x02\x00M<q' From Port
+
+2023-08-30 08:35:45 bytearray(b'\x01\x06\x00\xcb\x00\x00\xf84') To Port
+
+2023-08-30 08:35:45 b'\x01\x06\x00\xcb\x00\x00\xf84' From Port
+
