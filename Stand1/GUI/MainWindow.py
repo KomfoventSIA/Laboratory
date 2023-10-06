@@ -274,9 +274,11 @@ class MainWindow:
                             measurements.actuator.actuator_open()
                             print('Actuator opens. Sleep time: ', measurements.actuator_open_time)
                             time.sleep(measurements.actuator_open_time)
-                            measurements.actuator.override_mode_off()
-                            measurements.actuator.application_pos()
-                            time.sleep(measurements.actuator_change_position_time)
+                            if measurements.table_headers_config['blade position']:
+                                measurements.actuator.override_mode_off()
+                                time.sleep(1)
+                                measurements.actuator.application_pos()
+                                time.sleep(1)
                         for index in range(1, len(measurements.table_data)):
                             measurements.set_measurement_conditions(index)
                             measurements.make_measurement(index)
